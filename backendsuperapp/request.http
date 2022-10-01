@@ -1,0 +1,12 @@
+get http://localhost:5000/wells
+
+###
+post http://localhost:5000/wells
+Content-Type: application/json
+{
+    "depth" :"888",
+    "gr": "80.67",
+    "nphi":"75.12",
+    "vs":"574.75",
+    "vp":"557.87",
+}
