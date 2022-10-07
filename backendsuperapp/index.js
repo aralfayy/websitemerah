@@ -4,7 +4,7 @@ import cors from "cors";
 import WellRoute from "./routes/WellRoute.js";
 
 const app = express();
-mongoose.connect("mongodb://localhost:27017/pert", {
+mongoose.connect("mongodb://localhost:27017/perta", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });

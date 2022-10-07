@@ -1,12 +1,54 @@
-get http://localhost:5000/wells
+GET  http://localhost:5000/wells/
 
 ###
-post http://localhost:5000/wells
+
+POST http://localhost:5000/wells
 Content-Type: application/json
 {
-    "depth" :"888",
+    "depth" :"988",
     "gr": "80.67",
     "nphi":"75.12",
     "vs":"574.75",
     "vp":"557.87",
+}
+###
+PATCH http://localhost:5000/wells/633b0552904ffd22629d4c62
+
+content-Type: application/json
+
+{
+  "_id": {
+    "$oid": "633b0552904ffd22629d4c62"
+  },
+  "well": "well a",
+  "depths": [
+    {
+      "depth": "805",
+      "gr": "65",
+      "nphi": "47",
+      "vp": "837",
+      "vs": "876",
+
+    }
+
+  ]
+}
+###
+POST http://localhost:5000/wells/
+
+Content-Type: application/json
+
+{
+  "well": "well c",
+  "depths": [
+    {
+      "depth": 785,
+      "gr": 24,
+      "nphi": 123,
+      "vp": 3456,
+      "vs": 1235,
+       
+    }
+
+  ]
 }
